@@ -1,0 +1,71 @@
+﻿node.exe : npm warn Unknown 
+project config 
+"shamefully-hoist". This 
+will stop working in the 
+next major version of npm.
+Au caractère Ligne:1 : 1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Us
+ers\micka\AppData\Roaming\ 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (npm war  
+  n Unknow...version of np   
+ m.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+
+> @onwidget/astrowind@1.0.0-beta.52 build
+> astro build
+
+10:55:35 [astrowind] Astrowind `./src/config.yaml` has been loaded.
+10:55:36 [content] Syncing content
+10:55:36 [content] Synced content
+10:55:36 [types] Generated 849ms
+10:55:36 [build] output: "static"
+10:55:36 [build] mode: "static"
+10:55:36 [build] directory: C:\Users\micka\Desktop\excelworflow\dist\
+10:55:36 [build] Collecting build info...
+10:55:36 [build] Ô£ô Completed in 1.14s.
+10:55:36 [build] Building static entrypoints...
+10:55:37 [ERROR] [vite] 
+[31mÔ£ù[39m Build failed 
+in 1.30s
+Browserslist: caniuse-lite 
+is outdated. Please run:
+  npx 
+update-browserslist-db@latest
+  Why you should do it 
+regularly: https://github.com
+/browserslist/update-db#readm
+e
+Expected "}" but found 
+"├®cosyst├¿me"
+  Location:
+    C:/Users/micka/Desktop/ex
+celworflow/src/pages/index.as
+tro:73:61
+  Stack trace:
+    at failureErrorWithLog (C
+:\Users\micka\Desktop\excelwo
+rflow\node_modules\esbuild\li
+b\main.js:1477:15)
+    at 
+responseCallbacks.<computed> 
+(C:\Users\micka\Desktop\excel
+worflow\node_modules\esbuild\
+lib\main.js:623:9)
+    at Socket.readFromStdout 
+(C:\Users\micka\Desktop\excel
+worflow\node_modules\esbuild\
+lib\main.js:601:7)
+    at addChunk (node:interna
+l/streams/readable:559:12)
+    at Readable.push (node:in
+ternal/streams/readable:390:5
+)

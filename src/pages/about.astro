@@ -1,0 +1,142 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+
+const metadata = {
+  title: 'À propos — ExcelWorkflow',
+  description: 'Qui sommes-nous ? ExcelWorkflow est la plateforme de référence pour maîtriser Excel IA, Python, Power BI et DAX. Notre mission : rendre la data accessible à tous les professionnels.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget -->
+  <Hero
+    tagline="Notre mission"
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Équipe ExcelWorkflow — Experts Data & Excel IA',
+    }}
+  >
+    <Fragment slot="title">
+      La data <span class="text-emerald-500 dark:text-emerald-400">accessible</span> à tous<br />les professionnels
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      ExcelWorkflow est né d'une conviction simple : <strong>maîtriser Excel, Python et Power BI ne devrait pas être réservé aux data scientists</strong>. 
+      Tout professionnel peut — et doit — exploiter la puissance de ses données. Nous rendons cela possible.
+    </Fragment>
+  </Hero>
+
+  <!-- Notre Histoire -->
+  <Content
+    isReversed
+    tagline="Notre histoire"
+    title="Pourquoi ExcelWorkflow existe"
+    items={[
+      {
+        title: "Le constat",
+        description:
+          "Des millions de professionnels passent des heures dans Excel chaque semaine, sans jamais exploiter plus de 10% de ses capacités. Pendant ce temps, l'IA et les outils BI transforment radicalement la façon de travailler avec les données.",
+        icon: 'tabler:bulb',
+      },
+      {
+        title: "Notre réponse",
+        description:
+          "Des formations 100% pratiques, tournées vers le terrain, avec des exemples réels, des fichiers d'exercices et un accompagnement concret. Pas de théorie inutile — uniquement ce qui fonctionne en entreprise.",
+        icon: 'tabler:target',
+      },
+      {
+        title: "Notre impact",
+        description:
+          "Plus de 5 000 apprenants ont déjà transformé leur façon de travailler. Des heures économisées chaque semaine, des promotions obtenues, des outils créés de toutes pièces.",
+        icon: 'tabler:chart-line',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Equipe ExcelWorkflow en formation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Construits par des praticiens, pour des praticiens
+      </h3>
+      Nos formateurs sont des professionnels de la data qui travaillent au quotidien avec Excel, Python et Power BI dans des grandes entreprises. Ils connaissent vos problèmes. Ils ont les solutions.
+    </Fragment>
+  </Content>
+
+  <!-- Nos valeurs -->
+  <Features2
+    tagline="Nos valeurs"
+    title="Ce qui nous distingue"
+    subtitle="Des principes que nous appliquons dans chaque formation."
+    items={[
+      {
+        title: "Praticité avant tout",
+        description: "Chaque leçon est ancrée dans la réalité professionnelle. Nous utilisons des cas concrets issus de vrais contextes d'entreprise — finance, marketing, RH, supply chain.",
+        icon: 'tabler:tools',
+      },
+      {
+        title: "Mise à jour permanente",
+        description: "Excel Copilot, nouvelles fonctions Python, mises à jour Power BI : nos contenus évoluent aussi vite que les outils. Votre accès à vie vous garantit toujours le contenu le plus récent.",
+        icon: 'tabler:refresh',
+      },
+      {
+        title: "Communauté active",
+        description: "Rejoignez notre communauté Discord de +3 000 membres actifs. Posez vos questions, partagez vos créations, et apprenez des autres apprenants.",
+        icon: 'tabler:users',
+      },
+      {
+        title: "Transparence totale",
+        description: "Pas de marketing trompeur, pas de promesses irréalistes. Nous décrivons précisément ce que vous apprendrez, le temps nécessaire et ce que vous pouvez faire après.",
+        icon: 'tabler:eye',
+      },
+    ]}
+  />
+
+  <!-- Nous rejoindre -->
+  <Steps2
+    title="Rejoignez la communauté ExcelWorkflow"
+    subtitle="3 façons de rester connecté et de continuer à progresser avec nous."
+    items={[
+      {
+        title: "Suivez notre YouTube",
+        description: "Tutoriels gratuits chaque semaine : astuces Excel, démos Python, tips Power BI. Abonnez-vous à <a href=\"https://www.youtube.com/@excelworkflow\" class=\"text-emerald-500 hover:underline\" target=\"_blank\">@excelworkflow</a> pour ne rien manquer.",
+        icon: 'tabler:brand-youtube',
+      },
+      {
+        title: "Instagram & communauté",
+        description: "Bons plans, posts inspirants et coulisses de la création de contenu. Rejoignez-nous sur <a href=\"https://www.instagram.com/excelworkflow\" class=\"text-emerald-500 hover:underline\" target=\"_blank\">Instagram @excelworkflow</a>.",
+        icon: 'tabler:brand-instagram',
+      },
+      {
+        title: "Accédez à nos formations",
+        description: "Plus de 6 programmes complets pour maîtriser Excel IA, Python, Power BI, DAX et VBA. Choisissez votre prochaine montée en compétences.",
+        icon: 'tabler:school',
+      },
+    ]}
+  />
+
+  <!-- CTA -->
+  <CallToAction
+    title="Une question ? Un projet de formation ?"
+    subtitle="Équipes, entreprises, CPF, OPCO : nous accompagnons aussi les organisations dans leurs projets de formation data. Contactez-nous pour un devis personnalisé."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Voir les Formations',
+        href: '/formation',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Nous écrire',
+        href: 'mailto:contact@excelworkflow.com',
+        icon: 'tabler:mail',
+      },
+    ]}
+  />
+</Layout>

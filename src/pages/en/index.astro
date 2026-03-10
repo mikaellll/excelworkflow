@@ -1,0 +1,206 @@
+---
+import Layout from '~/layouts/PageLayoutEn.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+const metadata = {
+  title: 'ExcelWorkflow — Master Excel AI, Python & Power BI | Expert Courses',
+  ignoreTitleTemplate: true,
+  description:
+    'Expert courses in Excel with AI, Python Data Science, Power BI, and DAX. Automate your data, build powerful dashboards, and boost your professional productivity.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- ============ HERO ============ -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'View Courses',
+        href: '/en/formation',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Read Blog',
+        href: '/blog',
+        icon: 'tabler:book',
+      },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'ExcelWorkflow — Master Excel AI, Python, Power BI and DAX' }}
+  >
+    <Fragment slot="title">
+      Master <span class="text-emerald-400 dark:text-emerald-400">Excel AI</span>,<br />
+      Python & <span class="text-emerald-400 dark:text-emerald-400">Power BI</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <strong>100% actionable</strong> courses to automate your analysis, create professional dashboards
+      and leverage the power of AI in Excel. <br class="hidden sm:block" />
+      <span class="font-semibold text-emerald-400">Join 5,000+ professionals</span> who transformed the way they work with data.
+    </Fragment>
+  </Hero>
+
+  <!-- ============ STATS ============ -->
+  <Stats
+    stats={[
+      { title: 'Learners', amount: '5,000+' },
+      { title: 'Hours of Content', amount: '120+' },
+      { title: 'Modules', amount: '40+' },
+      { title: 'Satisfaction', amount: '4.9/5' },
+    ]}
+  />
+
+  <!-- ============ FEATURES ============ -->
+  <Features
+    id="features"
+    tagline="Our Philosophy"
+    title="Why choose ExcelWorkflow?"
+    subtitle="A concrete pedagogy, up-to-date tools, and support at every step of your skills development."
+    items={[
+      {
+        title: "Excel + AI: The Winning Combo",
+        description:
+          "Learn to use ChatGPT, Copilot, and Excel's new AI features to automate reports, clean data, and generate insights in seconds.",
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: "Python for Data",
+        description:
+          "Pandas, NumPy, Matplotlib, Seaborn: master the Python ecosystem to analyze millions of rows, create visualizations, and automate data flows.",
+        icon: 'tabler:brand-python',
+      },
+      {
+        title: "Power BI & Advanced DAX",
+        description:
+          "Build enterprise-grade interactive dashboards. Master complex DAX measures, data modeling, and visual storytelling with Power BI.",
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: "Automation & VBA Macros",
+        description:
+          "Eliminate repetitive tasks. Create powerful macros, automate imports/exports, and build custom Excel tools for your team.",
+        icon: 'tabler:terminal-2',
+      },
+      {
+        title: "Data SEO & Reporting",
+        description:
+          "Produce automated reports and dashboards connected to real-time data. Share clear insights with management in one click.",
+        icon: 'tabler:report-analytics',
+      },
+      {
+        title: "Quality Content, For Life",
+        description:
+          "Lifetime access to all full modules purchased, updates included. Our courses evolve with the tools — you always get the latest content.",
+        icon: 'tabler:infinity',
+      },
+    ]}
+  />
+
+  <!-- ============ COURSES ============ -->
+  <Features2
+    id="formations-apercu"
+    tagline="Our Flagship Courses"
+    title="Structured paths for every level"
+    subtitle="Whether beginner or expert, each program is designed to make you progress quickly with practical exercises on real use cases."
+    items={[
+      {
+        title: "Excel & AI — From Zero to Pro",
+        description:
+          "Master Excel from A to Z by integrating AI: advanced formulas (LAMBDA, XLOOKUP), Copilot, ChatGPT for Excel, predictive analysis and smart automation.",
+        icon: 'tabler:table',
+      },
+      {
+        title: "Python Data Science Bootcamp",
+        description:
+          "From installing Python to building full data pipelines. Pandas, visualization, applied machine learning for business data.",
+        icon: 'tabler:code',
+      },
+      {
+        title: "Power BI Masterclass + DAX",
+        description:
+          "Create impactful Power BI reports. Master DAX language for advanced calculations, table relationships, and web publishing.",
+        icon: 'tabler:layout-dashboard',
+      },
+      {
+        title: "VBA & Excel Automation",
+        description:
+          "Automate everything with VBA. Build forms, buttons, scripts, and professional tools without any prior programming knowledge.",
+        icon: 'tabler:robot',
+      },
+      {
+        title: "Advanced DAX for Analytics",
+        description:
+          "Dive deep into Power BI with advanced DAX functions: Time Intelligence, CALCULATE, FILTER, and expert measure patterns.",
+        icon: 'tabler:math-function',
+      },
+      {
+        title: "Professional Excel Dashboards",
+        description:
+          "Design dynamic Excel dashboards featuring advanced charts, form controls, and enterprise-grade layouts.",
+        icon: 'tabler:gauge',
+      },
+    ]}
+  />
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <Testimonials
+    title="What our learners say"
+    subtitle="Over 5,000 professionals have already transformed their careers thanks to ExcelWorkflow."
+    testimonials={[
+      {
+        testimonial:
+          "Thanks to the Power BI + DAX course, I built the executive dashboard my company had been waiting for for 2 years. My manager was blown away. Got promoted 3 months later!",
+        name: 'Sophie M.',
+        job: 'Financial Controller — Lyon',
+        image: { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face', alt: 'Sophie M.' },
+      },
+      {
+        testimonial:
+          "The Python bootcamp helped me go from 0 to automated analysis on 500,000 rows. In 8 weeks, I saved my team 10 hours of work per week.",
+        name: 'Thomas L.',
+        job: 'Data Analyst — Paris',
+        image: { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face', alt: 'Thomas L.' },
+      },
+      {
+        testimonial:
+          "The Excel AI training is a revelation. I was using 10% of Excel's capabilities. Now with Copilot and advanced formulas, I've become the data reference for my department.",
+        name: 'Marie C.',
+        job: 'Marketing Manager — Bordeaux',
+        image: { src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face', alt: 'Marie C.' },
+      },
+    ]}
+  />
+
+  <!-- ============ BLOG LATEST POSTS ============ -->
+  <BlogLatestPosts
+    title="Latest from the Blog"
+    information="Free tutorials, Excel AI tips, Python and Power BI guides. Every week, actionable content to help you improve."
+  />
+
+  <!-- ============ CALL TO ACTION FINAL ============ -->
+  <CallToAction
+    title="Ready to transform how you work with data?"
+    subtitle="Join thousands of professionals using ExcelWorkflow to master Excel AI, Python, and Power BI. Instant access, at your own pace."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Discover Courses',
+        href: '/en/formation',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Follow on YouTube',
+        href: 'https://www.youtube.com/@excelworkflow',
+        icon: 'tabler:brand-youtube',
+        target: '_blank',
+      },
+    ]}
+  />
+</Layout>

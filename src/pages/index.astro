@@ -1,0 +1,206 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+const metadata = {
+  title: 'ExcelWorkflow — Maîtrisez Excel IA, Python & Power BI | Formations Expert',
+  ignoreTitleTemplate: true,
+  description:
+    'Formations expertes en Excel avec IA, Python Data Science, Power BI et DAX. Automatisez vos données, créez des dashboards puissants et boostez votre productivité professionnelle.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- ============ HERO ============ -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Voir les Formations',
+        href: '/formation',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Lire le Blog',
+        href: '/blog',
+        icon: 'tabler:book',
+      },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'ExcelWorkflow — Maîtrisez Excel IA, Python, Power BI et DAX' }}
+  >
+    <Fragment slot="title">
+      Maîtrisez <span class="text-emerald-400 dark:text-emerald-400">Excel IA</span>,<br />
+      Python & <span class="text-emerald-400 dark:text-emerald-400">Power BI</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Des formations <strong>100% actionnables</strong> pour automatiser vos analyses, créer des dashboards
+      professionnels et exploiter la puissance de l'IA dans Excel. <br class="hidden sm:block" />
+      <span class="font-semibold text-emerald-400">Rejoignez +5 000 professionnels</span> qui ont transformé leur façon de travailler avec les données.
+    </Fragment>
+  </Hero>
+
+  <!-- ============ STATS ============ -->
+  <Stats
+    stats={[
+      { title: 'Apprenants', amount: '5 000+' },
+      { title: 'Heures de contenu', amount: '120+' },
+      { title: 'Modules de formation', amount: '40+' },
+      { title: 'Satisfaction', amount: '4.9/5' },
+    ]}
+  />
+
+  <!-- ============ FEATURES (Pourquoi ExcelWorkflow ?) ============ -->
+  <Features
+    id="features"
+    tagline="Notre philosophie"
+    title="Pourquoi choisir ExcelWorkflow ?"
+    subtitle="Une pédagogie concrète, des outils actuels et un accompagnement à chaque étape de votre montée en compétences."
+    items={[
+      {
+        title: "Excel + IA : le duo gagnant",
+        description:
+          "Apprenez à utiliser ChatGPT, Copilot et les nouvelles fonctions IA d'Excel pour automatiser vos rapports, nettoyer vos données et générer des insights en quelques secondes.",
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: "Python pour la Data",
+        description:
+          "Pandas, NumPy, Matplotlib, Seaborn : maîtrisez l'écosystème Python pour analyser des millions de lignes, créer des visualisations et automatiser vos flux de données.",
+        icon: 'tabler:brand-python',
+      },
+      {
+        title: "Power BI & DAX Avancé",
+        description:
+          "Construisez des dashboards interactifs de niveau professionnel. Maîtrisez les mesures DAX complexes, le modèle de données et le storytelling visuel avec Power BI.",
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: "Automatisation & Macros VBA",
+        description:
+          "Éliminez les tâches répétitives. Créez des macros puissantes, automatisez vos imports/exports et construisez des outils Excel sur mesure pour votre équipe.",
+        icon: 'tabler:terminal-2',
+      },
+      {
+        title: "SEO de données & Reporting",
+        description:
+          "Produisez des rapports automatiques et des tableaux de bord connectés aux données en temps réel. Partagez des insights clairs à votre direction en un clic.",
+        icon: 'tabler:report-analytics',
+      },
+      {
+        title: "Contenu de qualité, à vie",
+        description:
+          "Accès à vie à tous les modules achetés, mises à jour incluses. Nos formations évoluent avec les outils — vous bénéficiez toujours du contenu le plus récent.",
+        icon: 'tabler:infinity',
+      },
+    ]}
+  />
+
+  <!-- ============ FORMATIONS (aperçu) ============ -->
+  <Features2
+    id="formations-apercu"
+    tagline="Nos formations phares"
+    title="Des parcours structurés pour chaque niveau"
+    subtitle="Débutant ou expert, chaque programme est conçu pour vous faire progresser rapidement avec des exercices pratiques sur des cas réels."
+    items={[
+      {
+        title: "Excel & IA — De Zéro à Pro",
+        description:
+          "Maîtrisez Excel de A à Z en intégrant l'IA : formules avancées (LAMBDA, XLOOKUP), Copilot, ChatGPT pour Excel, analyse prédictive et automatisation intelligente.",
+        icon: 'tabler:table',
+      },
+      {
+        title: "Python Data Science Bootcamp",
+        description:
+          "De l'installation de Python à la création de pipelines de données complets. Pandas, visualisation, machine learning appliqué à la data business.",
+        icon: 'tabler:code',
+      },
+      {
+        title: "Power BI Masterclass + DAX",
+        description:
+          "Créez des rapports Power BI percutants. Maîtrisez le langage DAX pour des calculs avancés, les relations entre tables et la publication sur le web.",
+        icon: 'tabler:layout-dashboard',
+      },
+      {
+        title: "VBA & Automatisation Excel",
+        description:
+          "Automatisez tout avec VBA. Créez des formulaires, des boutons, des scripts et des outils professionnels sans aucune connaissance préalable en programmation.",
+        icon: 'tabler:robot',
+      },
+      {
+        title: "DAX Avancé pour l'Analyse",
+        description:
+          "Plongez dans le cœur de Power BI avec les fonctions DAX avancées : Time Intelligence, CALCULATE, FILTER, et les patterns de mesures expertes.",
+        icon: 'tabler:math-function',
+      },
+      {
+        title: "Dashboard Excel Professionnel",
+        description:
+          "Concevez des tableaux de bord Excel dynamiques avec des graphiques avancés, des contrôles de formulaire et une mise en page digne des meilleures entreprises.",
+        icon: 'tabler:gauge',
+      },
+    ]}
+  />
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <Testimonials
+    title="Ce que disent nos apprenants"
+    subtitle="Plus de 5 000 professionnels ont déjà transformé leur carrière grâce à ExcelWorkflow."
+    testimonials={[
+      {
+        testimonial:
+          "Grâce à la formation Power BI + DAX, j'ai pu créer le dashboard de direction que ma boîte attendait depuis 2 ans. Mon manager était bluffé. Promotion obtenue 3 mois après !",
+        name: 'Sophie M.',
+        job: 'Contrôleur de Gestion — Lyon',
+        image: { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face', alt: 'Sophie M.' },
+      },
+      {
+        testimonial:
+          "Le bootcamp Python m'a permis de passer de 0 à des analyses automatisées sur 500 000 lignes. En 8 semaines, j'ai économisé 10h de travail par semaine à mon équipe.",
+        name: 'Thomas L.',
+        job: 'Data Analyst — Paris',
+        image: { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face', alt: 'Thomas L.' },
+      },
+      {
+        testimonial:
+          "La formation Excel IA est une révélation. J'utilisais 10% des capacités d'Excel. Maintenant avec Copilot et les formules avancées, je suis devenu la référence data de mon service.",
+        name: 'Marie C.',
+        job: 'Responsable Marketing — Bordeaux',
+        image: { src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face', alt: 'Marie C.' },
+      },
+    ]}
+  />
+
+  <!-- ============ BLOG LATEST POSTS ============ -->
+  <BlogLatestPosts
+    title="Les derniers articles du Blog"
+    information="Tutoriels gratuits, astuces Excel IA, guides Python et Power BI. Chaque semaine, du contenu actionnable pour progresser."
+  />
+
+  <!-- ============ CALL TO ACTION FINAL ============ -->
+  <CallToAction
+    title="Prêt à transformer votre façon de travailler avec les données ?"
+    subtitle="Rejoignez des milliers de professionnels qui utilisent ExcelWorkflow pour maîtriser Excel IA, Python et Power BI. Accès immédiat, à votre rythme."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Découvrir les Formations',
+        href: '/formation',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Suivre sur YouTube',
+        href: 'https://www.youtube.com/@excelworkflow',
+        icon: 'tabler:brand-youtube',
+        target: '_blank',
+      },
+    ]}
+  />
+</Layout>

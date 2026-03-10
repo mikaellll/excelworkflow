@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://excelworkflow.com/sitemap-index.xml

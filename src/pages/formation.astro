@@ -1,0 +1,239 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'Formations Excel IA, Python, Power BI & DAX — ExcelWorkflow',
+  description:
+    'Découvrez nos formations en ligne sur Excel avec IA, Python Data Science, Power BI et DAX. Programmes structurés, accès à vie, résultats garantis. Rejoignez +5 000 apprenants.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- ============ HERO ============ -->
+  <Hero
+    tagline="Nos Formations"
+    title="Devenez expert en données avec Excel IA, Python & Power BI"
+    subtitle="Des formations 100% pratiques conçues pour les professionnels qui veulent aller plus loin. Automatisez, analysez, visualisez — et démarquez-vous sur le marché du travail."
+    actions={[
+      { variant: 'primary', text: 'Voir les programmes', href: '#formations', icon: 'tabler:arrow-down' },
+      { text: 'Nous contacter', href: '/about', icon: 'tabler:mail' },
+    ]}
+    image={{
+      src: '~/assets/images/formation-hero.png',
+      alt: 'Formations Excel IA Python Power BI DAX — ExcelWorkflow',
+    }}
+  />
+
+  <!-- ============ COMMENT ÇA MARCHE ============ -->
+  <Steps
+    id="comment-ca-marche"
+    title="Comment fonctionne ExcelWorkflow ?"
+    subtitle="Un parcours simple, des résultats concrets."
+    items={[
+      {
+        title: "Étape 1 : <span class=\"font-normal\">Choisissez votre formation</span>",
+        description:
+          "Parcourez notre catalogue et sélectionnez la formation adaptée à votre niveau et vos objectifs. Excel IA, Python, Power BI ou DAX — nous avons un programme pour vous.",
+        icon: 'tabler:pointer',
+      },
+      {
+        title: "Étape 2 : <span class=\"font-normal\">Accédez immédiatement</span>",
+        description:
+          "Dès votre inscription, accédez à l'ensemble du contenu vidéo, des exercices pratiques et des ressources téléchargeables. À votre rythme, quand vous voulez.",
+        icon: 'tabler:player-play',
+      },
+      {
+        title: "Étape 3 : <span class=\"font-normal\">Pratiquez sur des cas réels</span>",
+        description:
+          "Chaque module est accompagné de fichiers Excel, de datasets et de projets concrets tirés de situations professionnelles réelles. Apprenez en faisant.",
+        icon: 'tabler:tools',
+      },
+      {
+        title: "Étape 4 : <span class=\"font-normal\">Obtenez votre certificat</span>",
+        description:
+          "À la fin de chaque formation, validez vos acquis et obtenez votre certificat ExcelWorkflow. Un plus indéniable sur votre CV et LinkedIn.",
+        icon: 'tabler:certificate',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/hero-image.png',
+      alt: 'Processus de formation ExcelWorkflow',
+    }}
+  />
+
+  <!-- ============ FORMATIONS CATALOGUE ============ -->
+  <Features2
+    id="formations"
+    tagline="Catalogue complet"
+    title="Toutes nos formations"
+    subtitle="Chaque programme est conçu avec des experts du terrain. Mises à jour régulières incluses dans votre accès à vie."
+    columns={3}
+    items={[
+      {
+        title: "🤖 Excel & IA — De Zéro à Pro",
+        description:
+          "<strong>Pour qui :</strong> Tout niveau.<br/><strong>12h de vidéos</strong> · 45 exercices<br/><br/>Maîtrisez les formules avancées (XLOOKUP, LAMBDA, LET), intégrez ChatGPT et Microsoft Copilot dans Excel, automatisez la génération de rapports et exploitez l'analyse prédictive sans coder.",
+        icon: 'tabler:sparkles',
+        callToAction: { text: "En savoir plus →", href: '#excel-ia', variant: 'link' },
+      },
+      {
+        title: "🐍 Python Data Science Bootcamp",
+        description:
+          "<strong>Pour qui :</strong> Débutants & intermédiaires.<br/><strong>20h de vidéos</strong> · 60 projets<br/><br/>De l'installation à la production : Pandas, NumPy, Matplotlib, Seaborn, Plotly. Traitement de données en masse, automatisation et introduction au Machine Learning appliqué.",
+        icon: 'tabler:brand-python',
+        callToAction: { text: "En savoir plus →", href: '#python', variant: 'link' },
+      },
+      {
+        title: "📊 Power BI Masterclass",
+        description:
+          "<strong>Pour qui :</strong> Intermédiaires.<br/><strong>15h de vidéos</strong> · 30 dashboards<br/><br/>Créez des rapports Power BI de niveau entreprise. Modélisation de données, Power Query, relations et publication automatique. Le standard du Business Intelligence moderne.",
+        icon: 'tabler:layout-dashboard',
+        callToAction: { text: "En savoir plus →", href: '#powerbi', variant: 'link' },
+      },
+      {
+        title: "🔢 DAX Avancé — Mesures Expertes",
+        description:
+          "<strong>Pour qui :</strong> Utilisateurs Power BI intermédiaires/avancés.<br/><strong>10h de vidéos</strong> · 50 patterns<br/><br/>Maîtrisez CALCULATE, FILTER, ALL, Time Intelligence, les tables virtuelles et les patterns de mesures les plus complexes utilisés dans les grandes entreprises.",
+        icon: 'tabler:math-function',
+        callToAction: { text: "En savoir plus →", href: '#dax', variant: 'link' },
+      },
+      {
+        title: "⚡ VBA & Automatisation Excel",
+        description:
+          "<strong>Pour qui :</strong> Tout niveau.<br/><strong>8h de vidéos</strong> · 40 macros<br/><br/>Automatisez tout avec VBA : macros de traitement, formulaires personnalisés, connexions à des bases de données, automatisation de rapports PDF et envoi d'emails automatiques depuis Excel.",
+        icon: 'tabler:robot',
+        callToAction: { text: "En savoir plus →", href: '#vba', variant: 'link' },
+      },
+      {
+        title: "📈 Dashboard Excel Professionnel",
+        description:
+          "<strong>Pour qui :</strong> Intermédiaires.<br/><strong>6h de vidéos</strong> · 15 templates<br/><br/>Concevez des tableaux de bord dynamiques et professionnels avec graphiques avancés, slicers, jauges, cartes et contrôles de formulaire. Recevez 15 templates prêts à l'emploi.",
+        icon: 'tabler:gauge',
+        callToAction: { text: "En savoir plus →", href: '#dashboard', variant: 'link' },
+      },
+    ]}
+  />
+
+  <!-- ============ TARIFS ============ -->
+  <Pricing
+    id="tarifs"
+    title="Tarifs transparents, valeur maximale"
+    subtitle="Accès à vie à votre formation. Pas d'abonnement, pas de surprise. Une fois acheté, c'est pour toujours."
+    prices={[
+      {
+        title: "Formation Solo",
+        subtitle: "Idéal pour commencer",
+        price: 97,
+        period: "accès à vie",
+        items: [
+          { description: 'Accès à 1 formation complète' },
+          { description: 'Fichiers exercices & datasets' },
+          { description: 'Mises à jour incluses' },
+          { description: 'Certificat ExcelWorkflow' },
+          { description: 'Support par email' },
+        ],
+        callToAction: { targetBlank: false, text: "Choisir une formation", href: '#formations' },
+        hasRibbon: false,
+      },
+      {
+        title: "Pass Excel + IA",
+        subtitle: "Le plus populaire",
+        price: 197,
+        period: "accès à vie",
+        items: [
+          { description: 'Excel IA + VBA + Dashboard' },
+          { description: 'Projets réels inclus' },
+          { description: 'Templates premium (valeur 99€)' },
+          { description: 'Toutes les mises à jour à vie' },
+          { description: 'Accès à la communauté privée' },
+          { description: 'Appel de démarrage de 30 min' },
+        ],
+        callToAction: { targetBlank: false, text: "Commencer maintenant", href: '/about' },
+        hasRibbon: true,
+        ribbonTitle: 'Populaire',
+      },
+      {
+        title: "Pack Data Complet",
+        subtitle: "Tout le catalogue",
+        price: 397,
+        period: "accès à vie",
+        items: [
+          { description: 'Accès à TOUTES les formations' },
+          { description: 'Excel IA + Python + Power BI + DAX' },
+          { description: 'Tous les templates & datasets' },
+          { description: 'Communauté privée Discord' },
+          { description: '2 sessions coaching (60 min)' },
+          { description: 'Garantie satisfait ou remboursé 30j' },
+        ],
+        callToAction: { targetBlank: false, text: "Accéder au pack complet", href: '/about' },
+        hasRibbon: false,
+      },
+    ]}
+  />
+
+  <!-- ============ FAQ ============ -->
+  <FAQs
+    id="faq"
+    title="Questions fréquentes"
+    subtitle="Tout ce que vous devez savoir avant de commencer votre formation."
+    columns={1}
+    items={[
+      {
+        title: "Faut-il des connaissances préalables ?",
+        description:
+          "Non. La plupart de nos formations sont conçues pour partir de zéro. Chaque programme indique clairement le niveau requis. Nos formations Excel IA et VBA sont accessibles à tous, tandis que DAX Avancé est recommandé pour ceux qui utilisent déjà Power BI.",
+      },
+      {
+        title: "Comment accède-t-on aux formations ?",
+        description:
+          "Immédiatement après votre achat, vous recevez un email avec vos identifiants d'accès. Les formations sont disponibles en streaming depuis n'importe quel appareil (ordinateur, tablette, smartphone). Vous pouvez télécharger les ressources (fichiers Excel, datasets) depuis votre espace personnel.",
+      },
+      {
+        title: "Les formations sont-elles mises à jour ?",
+        description:
+          "Oui, absolument. Toutes nos formations évoluent avec les outils (nouvelles fonctionnalités Excel, mises à jour Power BI, nouvelles librairies Python). Vous bénéficiez de toutes les mises à jour à vie, sans frais supplémentaires.",
+      },
+      {
+        title: "Y a-t-il une garantie de remboursement ?",
+        description:
+          "Oui, le Pack Data Complet bénéficie d'une garantie satisfait ou remboursé de 30 jours. Si vous n'êtes pas satisfait du contenu, contactez-nous et nous vous remboursons intégralement, sans questions.",
+      },
+      {
+        title: "Les formations fonctionnent-elles sur Mac ?",
+        description:
+          "Les formations Python, Power BI Desktop (via VM ou Parallels) et Excel (en version Mac) sont compatibles. Certaines fonctionnalités VBA et Copilot nécessitent Windows. Nous indiquons clairement les limites dans chaque programme.",
+      },
+      {
+        title: "Peut-on obtenir une facture pour son employeur ?",
+        description:
+          "Oui. Toutes nos formations peuvent être achetées via une entreprise. Contactez-nous après votre achat pour recevoir une facture au nom de votre société. Certaines formations sont éligibles au financement par les OPCO pour les entreprises françaises.",
+      },
+    ]}
+  />
+
+  <!-- ============ CTA FINAL ============ -->
+  <CallToAction
+    title="Prêt à passer au niveau supérieur ?"
+    subtitle="Rejoignez +5 000 professionnels qui utilisent ExcelWorkflow pour maîtriser la data. Accès immédiat, à votre rythme, à vie."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Commencer maintenant',
+        href: '#tarifs',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Suivre sur Instagram',
+        href: 'https://www.instagram.com/excelworkflow',
+        icon: 'tabler:brand-instagram',
+        target: '_blank',
+      },
+    ]}
+  />
+</Layout>

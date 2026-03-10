@@ -1,0 +1,239 @@
+---
+import Layout from '~/layouts/PageLayoutEn.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'Excel AI, Python, Power BI & DAX Courses — ExcelWorkflow',
+  description:
+    'Discover our online courses in Excel with AI, Python Data Science, Power BI and DAX. Structured curriculum, lifetime access, guaranteed results. Join 5,000+ learners.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- ============ HERO ============ -->
+  <Hero
+    tagline="Our Courses"
+    title="Become a data expert with Excel AI, Python & Power BI"
+    subtitle="100% practical courses built for professionals who want to push boundaries. Automate, analyze, visualize — and stand out in the job market."
+    actions={[
+      { variant: 'primary', text: 'View Curriculum', href: '#formations', icon: 'tabler:arrow-down' },
+      { text: 'Contact Us', href: '/en/about', icon: 'tabler:mail' },
+    ]}
+    image={{
+      src: '~/assets/images/formation-hero.png',
+      alt: 'Excel AI Python Power BI DAX Courses — ExcelWorkflow',
+    }}
+  />
+
+  <!-- ============ COMMENT ÇA MARCHE ============ -->
+  <Steps
+    id="comment-ca-marche"
+    title="How does ExcelWorkflow work?"
+    subtitle="A simple process, real results."
+    items={[
+      {
+        title: "Step 1: <span class=\"font-normal\">Choose your course</span>",
+        description:
+          "Browse our catalog and pick the training that matches your level and goals. Excel AI, Python, Power BI, or DAX — we have a program tailored for you.",
+        icon: 'tabler:pointer',
+      },
+      {
+        title: "Step 2: <span class=\"font-normal\">Get instant access</span>",
+        description:
+          "Upon enrollment, immediately unlock all video content, practical exercises, and downloadable resources. At your own pace, anytime you want.",
+        icon: 'tabler:player-play',
+      },
+      {
+        title: "Step 3: <span class=\"font-normal\">Practice on real-world cases</span>",
+        description:
+          "Every module includes Excel files, datasets, and concrete projects pulled directly from actual corporate scenarios. You learn by doing.",
+        icon: 'tabler:tools',
+      },
+      {
+        title: "Step 4: <span class=\"font-normal\">Get your certificate</span>",
+        description:
+          "Upon completing each course, validate your new skills and receive your ExcelWorkflow certification. A huge asset for your resume and LinkedIn profile.",
+        icon: 'tabler:certificate',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/hero-image.png',
+      alt: 'ExcelWorkflow training process',
+    }}
+  />
+
+  <!-- ============ FORMATIONS CATALOGUE ============ -->
+  <Features2
+    id="formations"
+    tagline="Full Catalog"
+    title="All Our Courses"
+    subtitle="Every program is designed alongside industry experts. Regular updates are included in your lifetime access."
+    columns={3}
+    items={[
+      {
+        title: "🤖 Excel & AI — From Zero to Pro",
+        description:
+          "<strong>Who it's for:</strong> All levels.<br/><strong>12h of videos</strong> · 45 exercises<br/><br/>Master advanced formulas (XLOOKUP, LAMBDA, LET), integrate ChatGPT and Microsoft Copilot directly into Excel, automate reporting, and harness predictive analytics without coding.",
+        icon: 'tabler:sparkles',
+        callToAction: { text: "Learn more →", href: '#excel-ia', variant: 'link' },
+      },
+      {
+        title: "🐍 Python Data Science Bootcamp",
+        description:
+          "<strong>Who it's for:</strong> Beginners & Intermediates.<br/><strong>20h of videos</strong> · 60 projects<br/><br/>From installation to production: Pandas, NumPy, Matplotlib, Seaborn, Plotly. Mass data processing, automation, and a practical introduction to Machine Learning.",
+        icon: 'tabler:brand-python',
+        callToAction: { text: "Learn more →", href: '#python', variant: 'link' },
+      },
+      {
+        title: "📊 Power BI Masterclass",
+        description:
+          "<strong>Who it's for:</strong> Intermediates.<br/><strong>15h of videos</strong> · 30 dashboards<br/><br/>Build enterprise-grade Power BI reports. In-depth data modeling, Power Query, complex relationships, and auto-publishing. The modern Business Intelligence standard.",
+        icon: 'tabler:layout-dashboard',
+        callToAction: { text: "Learn more →", href: '#powerbi', variant: 'link' },
+      },
+      {
+        title: "🔢 Advanced DAX — Expert Measures",
+        description:
+          "<strong>Who it's for:</strong> Intermediate/Advanced Power BI users.<br/><strong>10h of videos</strong> · 50 patterns<br/><br/>Master CALCULATE, FILTER, ALL, Time Intelligence, virtual tables, and the most complex measure patterns used by top-tier corporations.",
+        icon: 'tabler:math-function',
+        callToAction: { text: "Learn more →", href: '#dax', variant: 'link' },
+      },
+      {
+        title: "⚡ VBA & Excel Automation",
+        description:
+          "<strong>Who it's for:</strong> All levels.<br/><strong>8h of videos</strong> · 40 macros<br/><br/>Automate everything using VBA: processing macros, custom forms, database connections, bulk PDF generation, and automated email sending straight from Excel.",
+        icon: 'tabler:robot',
+        callToAction: { text: "Learn more →", href: '#vba', variant: 'link' },
+      },
+      {
+        title: "📈 Professional Excel Dashboards",
+        description:
+          "<strong>Who it's for:</strong> Intermediates.<br/><strong>6h of videos</strong> · 15 templates<br/><br/>Design dynamic and stunning dashboards featuring advanced charts, slicers, map visuals, and form controls. Get 15 ready-to-use premium templates instantly.",
+        icon: 'tabler:gauge',
+        callToAction: { text: "Learn more →", href: '#dashboard', variant: 'link' },
+      },
+    ]}
+  />
+
+  <!-- ============ TARIFS ============ -->
+  <Pricing
+    id="tarifs"
+    title="Transparent pricing, maximum value"
+    subtitle="Lifetime access to your course. No subscriptions, no hidden fees. Once you buy it, it's yours forever."
+    prices={[
+      {
+        title: "Single Course",
+        subtitle: "Best to get started",
+        price: 97,
+        period: "lifetime access",
+        items: [
+          { description: 'Access to 1 complete course' },
+          { description: 'Exercise files & datasets' },
+          { description: 'All future updates included' },
+          { description: 'ExcelWorkflow Certificate' },
+          { description: 'Email Support' },
+        ],
+        callToAction: { targetBlank: false, text: "Choose a course", href: '#formations' },
+        hasRibbon: false,
+      },
+      {
+        title: "Excel + AI Pass",
+        subtitle: "Most Popular",
+        price: 197,
+        period: "lifetime access",
+        items: [
+          { description: 'Excel AI + VBA + Dashboards' },
+          { description: 'Real-world projects included' },
+          { description: 'Premium Templates (Value: $99)' },
+          { description: 'Lifetime access & updates' },
+          { description: 'Access to private community' },
+          { description: '30-minute kick-off call' },
+        ],
+        callToAction: { targetBlank: false, text: "Start now", href: '/en/about' },
+        hasRibbon: true,
+        ribbonTitle: 'Popular',
+      },
+      {
+        title: "Ultimate Data Pack",
+        subtitle: "The entire catalog",
+        price: 397,
+        period: "lifetime access",
+        items: [
+          { description: 'Access to ALL courses' },
+          { description: 'Excel AI + Python + Power BI + DAX' },
+          { description: 'Every template & dataset' },
+          { description: 'Private Discord community access' },
+          { description: '2x 1-on-1 coaching sessions (60 min)' },
+          { description: '30-day money-back guarantee' },
+        ],
+        callToAction: { targetBlank: false, text: "Get the Ultimate Pack", href: '/en/about' },
+        hasRibbon: false,
+      },
+    ]}
+  />
+
+  <!-- ============ FAQ ============ -->
+  <FAQs
+    id="faq"
+    title="Frequently Asked Questions"
+    subtitle="Everything you need to know before starting your journey."
+    columns={1}
+    items={[
+      {
+        title: "Do I need any prior knowledge or coding experience?",
+        description:
+          "No. Most of our courses are designed from scratch. Each program clearly states its prerequisites. Our Excel AI and VBA courses are accessible to complete beginners, while Advanced DAX is recommended for users who already know their way around Power BI.",
+      },
+      {
+        title: "How do I access the training?",
+        description:
+          "Right after your purchase, you will receive an email containing your login details. The training videos are available to stream from any device (desktop, tablet, smartphone). You can download all the raw materials (Excel files, datasets) directly from your student dashboard.",
+      },
+      {
+        title: "Are the courses kept up to date?",
+        description:
+          "Yes, absolutely. Our courses evolve constantly with the tools (new Excel features, Power BI updates, new Python libraries). You get lifetime access to all future updates at no extra cost.",
+      },
+      {
+        title: "Is there a money-back guarantee?",
+        description:
+          "Yes, the Ultimate Data Pack features a 30-day no-questions-asked refund policy. If the content doesn't meet your expectations, just reach out to us and we will give you a full refund.",
+      },
+      {
+        title: "Will these courses work on a Mac?",
+        description:
+          "The Python, Power BI Desktop (via VM or Parallels), and Excel (Mac edition) courses are highly compatible. However, certain advanced VBA features and Excel Copilot integrations currently require a Windows OS. We clearly point out Mac limitations inside each program.",
+      },
+      {
+        title: "Can I get an invoice for my employer?",
+        description:
+          "Yes. All our courses can be expensed or invoiced to your company. Contact us after your purchase to receive a corporate invoice under your company's name. Let us know if your training department requires specific paperwork.",
+      },
+    ]}
+  />
+
+  <!-- ============ CTA FINAL ============ -->
+  <CallToAction
+    title="Ready to take your skills to the next level?"
+    subtitle="Join 5,000+ professionals using ExcelWorkflow to master their data. Instant access, at your own pace, for life."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start learning now',
+        href: '#tarifs',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Follow on Instagram',
+        href: 'https://www.instagram.com/excelworkflow',
+        icon: 'tabler:brand-instagram',
+        target: '_blank',
+      },
+    ]}
+  />
+</Layout>

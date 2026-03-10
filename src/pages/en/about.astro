@@ -1,0 +1,142 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayoutEn.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+
+const metadata = {
+  title: 'About us — ExcelWorkflow',
+  description: 'Who are we? ExcelWorkflow is the go-to platform for mastering Excel AI, Python, Power BI and DAX. Our mission: make data accessible to all professionals.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget -->
+  <Hero
+    tagline="Our mission"
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'ExcelWorkflow Team — Data & Excel AI Experts',
+    }}
+  >
+    <Fragment slot="title">
+      Data made <span class="text-emerald-500 dark:text-emerald-400">accessible</span> to<br />all professionals
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      ExcelWorkflow was born from a simple belief: <strong>mastering Excel, Python, and Power BI shouldn't be reserved for data scientists</strong>. 
+      Every professional can — and should — leverage the power of their data. We make that possible.
+    </Fragment>
+  </Hero>
+
+  <!-- Notre Histoire -->
+  <Content
+    isReversed
+    tagline="Our Story"
+    title="Why ExcelWorkflow Exists"
+    items={[
+      {
+        title: "The reality",
+        description:
+          "Millions of professionals spend hours in Excel every week, never using more than 10% of its capabilities. Meanwhile, AI and BI tools are radically transforming how we work with data.",
+        icon: 'tabler:bulb',
+      },
+      {
+        title: "Our response",
+        description:
+          "100% practical training courses, built for the field, with real-world examples, exercise files, and concrete support. No useless theory — only what works in corporate environments.",
+        icon: 'tabler:target',
+      },
+      {
+        title: "Our impact",
+        description:
+          "Over 5,000 learners have already transformed the way they work. Saving hours every week, earning promotions, and building business tools from scratch.",
+        icon: 'tabler:chart-line',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'ExcelWorkflow Training Team',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Built by practitioners, for practitioners
+      </h3>
+      Our instructors are data professionals who work daily with Excel, Python, and Power BI in major corporations. They know your challenges. They have the solutions.
+    </Fragment>
+  </Content>
+
+  <!-- Nos valeurs -->
+  <Features2
+    tagline="Our values"
+    title="What sets us apart"
+    subtitle="Principles we apply to every course we teach."
+    items={[
+      {
+        title: "Practicality above all",
+        description: "Every lesson is anchored in professional reality. We use concrete examples from real corporate contexts — finance, marketing, HR, supply chain.",
+        icon: 'tabler:tools',
+      },
+      {
+        title: "Constantly updated",
+        description: "Excel Copilot, new Python functions, Power BI updates: our content evolves as fast as the tools do. Your lifetime access guarantees you always have the latest content.",
+        icon: 'tabler:refresh',
+      },
+      {
+        title: "Active Community",
+        description: "Join our Discord community of 3,000+ active members. Ask questions, share your creations, and learn from other students.",
+        icon: 'tabler:users',
+      },
+      {
+        title: "Total transparency",
+        description: "No misleading marketing, no unrealistic promises. We describe exactly what you'll learn, the time required, and what you'll be able to do afterward.",
+        icon: 'tabler:eye',
+      },
+    ]}
+  />
+
+  <!-- Nous rejoindre -->
+  <Steps2
+    title="Join the ExcelWorkflow community"
+    subtitle="3 ways to stay connected and keep learning with us."
+    items={[
+      {
+        title: "Follow our YouTube",
+        description: "Free tutorials every week: Excel tips, Python demos, Power BI tricks. Subscribe to <a href=\"https://www.youtube.com/@excelworkflow\" class=\"text-emerald-500 hover:underline\" target=\"_blank\">@excelworkflow</a> so you don't miss anything.",
+        icon: 'tabler:brand-youtube',
+      },
+      {
+        title: "Instagram & community",
+        description: "Tips, inspiring posts, and behind the scenes of content creation. Join us on <a href=\"https://www.instagram.com/excelworkflow\" class=\"text-emerald-500 hover:underline\" target=\"_blank\">Instagram @excelworkflow</a>.",
+        icon: 'tabler:brand-instagram',
+      },
+      {
+        title: "Access our courses",
+        description: "Over 6 comprehensive programs to master Excel AI, Python, Power BI, DAX, and VBA. Choose your next skill to upgrade.",
+        icon: 'tabler:school',
+      },
+    ]}
+  />
+
+  <!-- CTA -->
+  <CallToAction
+    title="A question? A training plan?"
+    subtitle="Teams, companies, enterprise: we also help organizations with their data training initiatives. Contact us for a custom quote."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'View Courses',
+        href: '/en/formation',
+        icon: 'tabler:rocket',
+      },
+      {
+        text: 'Email us',
+        href: 'mailto:contact@excelworkflow.com',
+        icon: 'tabler:mail',
+      },
+    ]}
+  />
+</Layout>
