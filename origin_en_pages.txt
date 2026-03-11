@@ -1,3 +1,0 @@
-src/pages/en/about.astro
-src/pages/en/formation.astro
-src/pages/en/index.astro

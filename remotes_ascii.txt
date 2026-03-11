@@ -1,4 +1,0 @@
-origin	https://github.com/mikaellll/excelworkflow.git (fetch)
-origin	https://github.com/mikaellll/excelworkflow.git (push)
-seo	https://github.com/mikaellll/excelworkflow-seo.git (fetch)
-seo	https://github.com/mikaellll/excelworkflow-seo.git (push)

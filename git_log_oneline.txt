@@ -1,2 +1,0 @@
-63282e0 test push
-6644279 feat: optimize SEO settings, i18n detection and sitemap configuration
