@@ -1,0 +1,322 @@
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     10:22
+d-----   10/03/2026     10:22
+d-----   10/03/2026     10:22
+d-----   10/03/2026     10:22
+d-----   10/03/2026     11:09
+d-----   10/03/2026     11:10
+d-----   10/03/2026     10:22
+-a----   10/03/2026     10:49
+-a----   08/03/2026     07:18
+-a----   10/03/2026     11:09
+-a----   10/03/2026     10:35
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\assets
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     10:22
+d-----   10/03/2026     10:34
+d-----   10/03/2026     10:22
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\assets\favicons
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\assets\images
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   10/03/2026     10:33
+-a----   10/03/2026     10:33
+-a----   10/03/2026     10:33
+-a----   08/03/2026     07:18
+-a----   10/03/2026     10:34
+-a----   08/03/2026     07:18
+-a----   10/03/2026     10:32
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\assets\styles
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\components
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     10:22
+d-----   10/03/2026     11:13
+d-----   10/03/2026     10:22
+d-----   10/03/2026     10:22
+-a----   10/03/2026     10:43
+-a----   08/03/2026     07:18
+-a----   10/03/2026     10:34
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\components\blog
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\components\common
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   10/03/2026     11:13
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   10/03/2026     17:56
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\components\ui
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\components\widgets
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   10/03/2026     11:24
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\content
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   10/03/2026     11:36
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\data
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     11:22
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\data\post
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     11:28
+-a----   10/03/2026     10:42
+-a----   10/03/2026     10:38
+-a----   10/03/2026     10:39
+-a----   10/03/2026     10:39
+-a----   10/03/2026     10:42
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\data\post\en
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   10/03/2026     11:27
+-a----   10/03/2026     11:26
+-a----   10/03/2026     11:27
+-a----   10/03/2026     11:27
+-a----   10/03/2026     11:27
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\layouts
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+-a----   10/03/2026     17:56
+-a----   08/03/2026     07:18
+-a----   08/03/2026     08:10
+-a----   10/03/2026     11:09
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\pages
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     11:11
+d-----   10/03/2026     10:22
+-a----   08/03/2026     07:18
+-a----   10/03/2026     10:57
+-a----   08/03/2026     07:35
+-a----   10/03/2026     10:57
+-a----   10/03/2026     10:56
+-a----   08/03/2026     07:35
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:34
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\pages\en
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   10/03/2026     11:10
+-a----   10/03/2026     11:11
+-a----   10/03/2026     11:10
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\pages\[...blog]
+
+
+Mode            LastWriteTime
+----            -------------
+d-----   10/03/2026     10:22
+d-----   10/03/2026     10:22
+-a----   10/03/2026     11:37
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\pages\[...blog]\[catego
+    ry]
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\pages\[...blog]\[tag]
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   08/03/2026     07:18
+
+
+    R?pertoire: C:\Users\mick
+    a\Desktop\excelworflow\sr
+    c\utils
+
+
+Mode            LastWriteTime
+----            -------------
+-a----   10/03/2026     11:41
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+-a----   08/03/2026     07:18
+
+

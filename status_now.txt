@@ -1,0 +1,38 @@
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    seo-test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/
+	deleted_files.txt
+	deleted_files_20.txt
+	diff_origin.txt
+	filelist_head.txt
+	filelist_initial.txt
+	full_reflog.txt
+	full_src_structure.txt
+	git_log_oneline.txt
+	git_status_restored.txt
+	ignored_status.txt
+	last_commit.diff
+	origin_en_pages.txt
+	origin_fr_data.txt
+	origin_log.txt
+	origin_ref.txt
+	origin_src_pages.txt
+	pages_structure.txt
+	public/google6222d532a4c8bfc7 .html
+	push_error.txt
+	push_error_ascii.txt
+	push_error_final.txt
+	reflog_ascii.txt
+	remotes.txt
+	remotes_ascii.txt
+	status.txt
+	status_now.txt
+	test_src_pages.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

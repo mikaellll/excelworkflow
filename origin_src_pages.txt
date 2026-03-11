@@ -1,0 +1,15 @@
+src/pages/404.astro
+src/pages/[...blog]/[...page].astro
+src/pages/[...blog]/[category]/[...page].astro
+src/pages/[...blog]/[tag]/[...page].astro
+src/pages/[...blog]/index.astro
+src/pages/about.astro
+src/pages/cookies.md
+src/pages/en/about.astro
+src/pages/en/formation.astro
+src/pages/en/index.astro
+src/pages/formation.astro
+src/pages/index.astro
+src/pages/privacy.md
+src/pages/rss.xml.ts
+src/pages/terms.md

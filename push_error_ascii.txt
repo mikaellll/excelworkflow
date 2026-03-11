@@ -1,0 +1,25 @@
+git : To https://github.com/m
+ikaellll/excelworkflow.git
+Au caract?re Ligne:1 : 1
++ git push origin main 
+--force 2>&1 | Out-File 
+-FilePath push_error.txt ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (To http  
+  s://gith...celworkflow.g   
+ it:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+ ! [remote rejected] main -> 
+main (refusing to allow an 
+OAuth App to create or 
+update workflow `.github/work
+flows/actions.yaml` without 
+`workflow` scope)
+error: failed to push some 
+refs to 'https://github.com/m
+ikaellll/excelworkflow.git'

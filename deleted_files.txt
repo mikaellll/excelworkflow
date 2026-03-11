@@ -1,0 +1,7 @@
+commit 63282e0b86ab435c42f868e6e73aef4d9bbeb055
+Author: mikaelll <mickaelbn@gmail.com>
+Date:   Tue Mar 10 18:15:00 2026 +0100
+
+    test push
+
+ delete mode 100644 .github/workflows/actions.yaml
