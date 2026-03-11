@@ -81,8 +81,8 @@ export default defineConfig({
     rehypePlugins: [responsiveTablesRehypePlugin, lazyImagesRehypePlugin],
     shikiConfig: {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      langs: ['vba', 'python', 'javascript', 'typescript', 'html', 'css', 'sql', 'markdown', 'yaml', 'json', 'bash', 'powerquery'] as any,
-      theme: 'dracula', // Optional: pick a nice theme if you want to change it
+      langs: ['python', 'javascript', 'typescript', 'html', 'css', 'sql', 'markdown', 'yaml', 'json', 'bash'] as any,
+      theme: 'dracula',
     },
   },
 
