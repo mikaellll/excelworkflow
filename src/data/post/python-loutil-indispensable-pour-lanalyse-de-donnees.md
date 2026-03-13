@@ -94,4 +94,3 @@ Python n'est pas seulement un langage de programmation, c'est un outil révoluti
 Prêt à faire le saut ? Commencez dès aujourd'hui à explorer les possibilités infinies avec Python et transformez vos données en décisions stratégiques. Pour aller plus loin, téléchargez notre guide complet sur l'intégration de Python dans l'analyse de données.
 
 ---
-```

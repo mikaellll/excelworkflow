@@ -1,4 +1,3 @@
-```yaml
 ---
 publishDate: 2023-10-15T08:00:00Z
 title: "Python: The Essential Tool for Data Analysis"

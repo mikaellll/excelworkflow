@@ -86,7 +86,7 @@ async function generateArticle() {
     temperature: 0.7,
   });
 
-  let contentFR = completionFR.choices[0].message.content.replace(/^```markdown\n/, '').replace(/\n```$/, '');
+  let contentFR = completionFR.choices[0].message.content.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
 
   // Extract title for filename
   const titleMatch = contentFR.match(/title: "(.*)"/);
@@ -109,7 +109,7 @@ async function generateArticle() {
     temperature: 0.3,
   });
 
-  let contentEN = completionEN.choices[0].message.content.replace(/^```markdown\n/, '').replace(/\n```$/, '');
+  let contentEN = completionEN.choices[0].message.content.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
 
   // Replace placeholders in FR
   contentFR = contentFR.replace(/TIMESTAMP_HERE/g, timestamp);
