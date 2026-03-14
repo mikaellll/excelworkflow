@@ -1,0 +1,120 @@
+﻿node.exe : npm warn Unknown 
+project config 
+"shamefully-hoist". This 
+will stop working in the 
+next major version of npm.
+Au caractère Ligne:1 : 1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Us
+ers\micka\AppData\Roaming\ 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (npm war  
+  n Unknow...version of np   
+ m.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+
+> @onwidget/astrowind@1.0.0-beta.52 dev
+> astro dev
+
+22:33:14 [@astrojs/cloudflare] Enabling sessions with Cloudflare KV with the "SESSION" KV binding.
+22:33:14 [@astrojs/cloudflare] If you see the error "Invalid binding `SESSION`" in your build output, you need to add the binding to your wrangler config file.
+22:33:15 [astrowind] Astrowind `./src/config.yaml` has been loaded.
+22:33:15 [WARN] [adapter] Cloudflare does not support sharp at runtime. However, you can configure `imageService: "compile"` to optimize images with sharp on prerendered pages during build time.
+22:33:15 [types] Generated 2ms
+22:33:16 [content] Syncing content
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "excel" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "excel" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "m" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "excel" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "excel" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "excel" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "excel" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[Shiki] The language "vba" 
+doesn't exist, falling back 
+to "plaintext".
+[InvalidContentEntryDataError
+] post ÔåÆ en/python-loutil-i
+ndispensable-pour-lanalyse-de
+-donnees data does not match 
+collection schema.
+
+  title**: **title: Required
+
+  Hint:
+    See https://docs.astro.bu
+ild/en/guides/content-collect
+ions/ for more information 
+on content schemas.
+  Error reference:
+    https://docs.astro.build/
+en/reference/errors/invalid-c
+ontent-entry-data-error/
+  Location:
+    C:\Users\micka\Desktop\ex
+celworflow\src\data\post\en\p
+ython-loutil-indispensable-po
+ur-lanalyse-de-donnees.md:0:0
+  Stack trace:
+    at getEntryDataAndImages 
+(file:///C:/Users/micka/Deskt
+op/excelworflow/node_modules/
+astro/dist/content/utils.js:1
+57:26)
+    at async syncData (C:/Use
+rs/micka/Desktop/excelworflow
+/node_modules/astro/dist/cont
+ent/loaders/glob.js:97:28)

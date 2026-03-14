@@ -111,13 +111,15 @@ async function generateArticle() {
 
   let contentEN = completionEN.choices[0].message.content.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
 
-  // Replace placeholders in FR
-  contentFR = contentFR.replace(/TIMESTAMP_HERE/g, timestamp);
-  contentFR = contentFR.replace(/IMAGE_NAME_HERE/g, imageName);
+  // Replace placeholders or incorrect GPT values using regex
+  contentFR = contentFR.replace(/publishDate:.*$/m, `publishDate: ${timestamp}`);
+  contentFR = contentFR.replace(/image:\s*~\/assets\/images\/.*$/m, `image: ~/assets/images/${imageName}.png`);
+  contentFR = contentFR.replace(/url:\s*~\/assets\/images\/.*$/m, `url: ~/assets/images/${imageName}.png`);
   
-  // Ensure placeholders in EN are also filled (if GPT didn't translate them correctly or left them)
-  contentEN = contentEN.replace(/TIMESTAMP_HERE/g, timestamp);
-  contentEN = contentEN.replace(/IMAGE_NAME_HERE/g, imageName);
+  // Ensure robust replacement in EN as well
+  contentEN = contentEN.replace(/publishDate:.*$/m, `publishDate: ${timestamp}`);
+  contentEN = contentEN.replace(/image:\s*~\/assets\/images\/.*$/m, `image: ~/assets/images/${imageName}.png`);
+  contentEN = contentEN.replace(/url:\s*~\/assets\/images\/.*$/m, `url: ~/assets/images/${imageName}.png`);
 
   // Save French Article
   const filePathFR = path.join(POSTS_DIR, `${slug}.md`);

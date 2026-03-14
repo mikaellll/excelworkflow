@@ -1,8 +1,8 @@
 ---
-publishDate: 2023-10-15T08:00:00Z
+publishDate: 2026-03-14T05:00:00Z
 title: "Python : L'outil Indispensable pour l'Analyse de Données"
 excerpt: "Découvrez comment Python révolutionne l'analyse de données avec des outils puissants et intelligents."
-image: ~/assets/images/python-analyse-donnees.png
+image: ~/assets/images/ai-python-loutil-indispensable-pour-lanalyse-de-donnees.png
 category: "Analyse de Données"
 tags:
   - Python
@@ -13,7 +13,7 @@ metadata:
   description: "Explorez l'utilisation de Python pour transformer vos données en insights précieux."
   openGraph:
     images:
-      - url: ~/assets/images/python-analyse-donnees.png
+      - url: ~/assets/images/ai-python-loutil-indispensable-pour-lanalyse-de-donnees.png
         width: 1200
         height: 630
 ---

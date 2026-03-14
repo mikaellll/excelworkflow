@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-10-15T08:00:00Z
+publishDate: 2026-03-14T05:00:00Z
 title: "Python: The Essential Tool for Data Analysis"
 excerpt: "Discover how Python is revolutionizing data analysis with powerful and intelligent tools."
 image: ~/assets/images/ai-python-loutil-indispensable-pour-lanalyse-de-donnees.png
