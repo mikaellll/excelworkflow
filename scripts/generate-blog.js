@@ -46,7 +46,8 @@ async function generateArticle() {
 
   // 1. Generate French Version
   const promptFR = `Tu es un expert en Data et Productivité (Excel, Power BI, Python). 
-  Écris un article de blog complet et optimisé SEO en Français pour le site ExcelWorkflow.
+  Écris un article de blog complet, détaillé et optimisé SEO en Français pour le site ExcelWorkflow.
+  L'article doit être long et approfondi (environ 800 mots).
   Thème imposé : ${theme}.
   
   L'article doit être au format Markdown et inclure un frontmatter YAML exact :
