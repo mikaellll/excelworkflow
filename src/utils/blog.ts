@@ -261,7 +261,12 @@ export async function getRelatedPosts(originalPost: Post, maxResults: number = 4
   const originalTagsSet = new Set(originalPost.tags ? originalPost.tags.map((tag) => tag.slug) : []);
 
   const postsWithScores = allPosts.reduce((acc: { post: Post; score: number }[], iteratedPost: Post) => {
-    if (iteratedPost.slug === originalPost.slug) return acc;
+    if (iteratedPost.id === originalPost.id) return acc;
+
+    const isOriginalEN = originalPost.permalink.startsWith('en/');
+    const isIteratedEN = iteratedPost.permalink.startsWith('en/');
+
+    if (isOriginalEN !== isIteratedEN) return acc;
 
     let score = 0;
     if (iteratedPost.category && originalPost.category && iteratedPost.category.slug === originalPost.category.slug) {
